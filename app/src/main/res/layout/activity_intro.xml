@@ -18,10 +18,12 @@
         android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </androidx.viewpager.widget.ViewPager>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_next"
         android:layout_width="101dp"
         android:layout_height="37dp"
         android:layout_marginStart="138dp"
@@ -40,10 +42,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/tab_indicator" />
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout"
+        app:tabBackground="@drawable/indicator_selector"
+        android:id="@+id/tab_indicator"
         android:layout_width="93dp"
         android:layout_height="37dp"
         android:layout_marginStart="88dp"
@@ -51,25 +54,29 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="87dp"
         android:layout_marginRight="87dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/button_next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/screen_viewpager"
         app:layout_constraintVertical_bias="0.74">
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="left" />
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="center" />
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="right" />
     </com.google.android.material.tabs.TabLayout>
+
+    <Button
+        android:id="@+id/button_getStarted"
+        android:layout_width="163dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/button_gradient_style"
+        android:text="Get Started"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/button_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
