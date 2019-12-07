@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "99102229540",
+    "firebase_url": "https://final-project-db8ec.firebaseio.com",
+    "project_id": "final-project-db8ec",
+    "storage_bucket": "final-project-db8ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99102229540:android:86553a1f64dbcec08344b1",
+        "android_client_info": {
+          "package_name": "edu.newhaven.final_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "99102229540-jn1bm0ufukb5ac1kele0c8m156r9v8ji.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.newhaven.final_project",
+            "certificate_hash": "6d231238bf5bc85db6f3d6d021e05e734981cfc2"
+          }
+        },
+        {
+          "client_id": "99102229540-o3172i6lb99v7hk6p8f2s8g0o4jti8p3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOMAUWxZN5HwwOq-9MAg2JF2oz8G8P8F8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "99102229540-o3172i6lb99v7hk6p8f2s8g0o4jti8p3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

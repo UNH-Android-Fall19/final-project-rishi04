@@ -1,4 +1,4 @@
-package edu.newhaven.final_project;
+package edu.newhaven.final_project.Introduction;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -6,9 +6,6 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-import android.view.WindowManager.LayoutParams;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -17,6 +14,9 @@ import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import edu.newhaven.final_project.MainActivity;
+import edu.newhaven.final_project.R;
 
 public class IntroActivity extends AppCompatActivity {
 
@@ -38,7 +38,6 @@ public class IntroActivity extends AppCompatActivity {
 
         // Hide action bar
 
-        getSupportActionBar().hide();
 
         // initiate views
         next_button = findViewById(R.id.button_next);
@@ -111,11 +110,12 @@ public class IntroActivity extends AppCompatActivity {
 
             }
         });
+
         get_started.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent SignUpActivity = new Intent(getApplicationContext(),SignUpActivity.class);
+                Intent SignUpActivity = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(SignUpActivity);
 
             }

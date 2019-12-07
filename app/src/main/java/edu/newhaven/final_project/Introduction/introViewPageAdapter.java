@@ -1,4 +1,4 @@
-package edu.newhaven.final_project;
+package edu.newhaven.final_project.Introduction;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -12,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
 import java.util.List;
+
+import edu.newhaven.final_project.R;
 
 public class introViewPageAdapter extends PagerAdapter {
 
