@@ -1,9 +1,11 @@
 package edu.newhaven.final_project.Post;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -27,6 +29,7 @@ public class PostActivity extends AppCompatActivity {
     private Button PostButton;
     private EditText PostDescription;
     private static final int gallery_Pick= 1;
+    private Uri ImageUri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +60,16 @@ public class PostActivity extends AppCompatActivity {
         galleryIntent.setType("image/*");
         startActivityForResult(galleryIntent, gallery_Pick);
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode== gallery_Pick && resultCode == RESULT_OK && data != null){
+            ImageUri = data.getData();
+            SelectpostImage.setImageURI(ImageUri);
+        }
     }
 
     @Override
